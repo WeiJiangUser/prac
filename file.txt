@@ -1,0 +1,23 @@
+this is new file.
+
+class Person:
+	name = "jack"
+	def __init__(self,age,sex):
+		self.__age = age
+		self.sex = sex
+	
+	def getAge():
+		return self__age
+
+	def setAge(age):
+		if age < 0:
+			age = 0
+		self.__age = age
+
+person = Person(19,"male")
+
+person.setAge(20)
+print(person.getAge())
+
+
+
