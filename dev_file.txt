@@ -1,0 +1,40 @@
+this is master branch modified file.
+
+当两个分支同时修改一个文件，在主分支进行合并是会出现冲突
+
+必须手动将文件改为最终格式，然后进行添加和提交。
+
+将文件进行添加至暂存区（缓存区），然后进行commit提交
+
+git鼓励使用分支，避免在主分支进行操作，主分支合并其他分支
+
+使用git分布式版本控制器步骤：
+
+1.建立一个文件夹，进行git init 初始化本地版本库
+
+2.在本地库进行操作文件，添加和提交至本地版本库。
+第一次提交时会验证你的身份：
+git config --global user.name "git账户名"
+git config --global user.email "git 用户邮箱"
+
+3.使用版本回退进行修改的状态，
+
+重点：
+建立远程版本库
+1.在git官网建立一个库文件，
+2.生成秘钥 命令：ssh keygen -t rsa -C "git邮箱",自动会生成.ssh 文件夹，
+将..ssh中的公钥复制到git官网中进行匹配
+3.ssh -T git@github.com 检验是否添加成功
+
+将本地仓库和远程仓库进行连接：
+
+进行关联：git remote add origin git@github.com:username/repository.git
+关联成功之后就可以推送本地仓库内的文件或者分支到远程仓库中，
+
+从远程仓库中克隆版本库，命令：git clone git@github.com:username/repository.git
+
+
+
+
+
+
